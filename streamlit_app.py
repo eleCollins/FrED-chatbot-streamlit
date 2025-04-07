@@ -8,6 +8,7 @@ st.title("🤖 AI-Fred - Tu Asistente Analítico")
 uploaded_file = st.file_uploader("📁 Sube un archivo CSV para analizar", type="csv")
 
 api_key = st.secrets["OPENROUTER_API_KEY"]
+st.write("Clave leída (parcial):", api_key[:5] + "*****")
 
 
 headers = {
